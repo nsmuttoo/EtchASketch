@@ -1,19 +1,25 @@
 
 
 const container = document.querySelector("#container")
-var divList = []
+var innerDivList = []
+var outerDivList =[]
+var store = []
 
+function fillDivList(size){
 
-function fillDivList(height,width){
-size = height*width
+for(j=0; j<size; j++) {
+outerDivList[j] = document.createElement("div")
+outerDivList[j].classList.add("pixelBox")
+innerDivList = store
 for(i =0; i<size; i++){
-divList[i] = document.createElement("div") 
-divList[i].classList.add("pixel")
-divList[i].innerHTML ="_"
-container.appendChild(divList[i])
-console.log(divList[i])
+innerDivList[i] = document.createElement("div") 
+innerDivList[i].classList.add("pixel")
+innerDivList[i].innerHTML ="."
+outerDivList[j].appendChild(innerDivList[i])
+console.log(innerDivList[i])
+}
+container.appendChild(outerDivList[j])
+}
 }
 
-}
-
-fillDivList(16,16)
+fillDivList(16)
