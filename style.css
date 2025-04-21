@@ -4,34 +4,35 @@
     padding: 20px;
     border: 2px;
 
-    height: 80vh;
+    height: auto;
 
     border-color: black;
     border-style: solid;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-around;
     flex-wrap: wrap;
     gap: 1px;
 }
 
 .pixel{
     flex: auto  ;
-    border: black;
-    border: 1vh;
-    border-style: solid;
-    width: 5vh;
-    height: 5vh;
-    max-width: 5vh;
-    max-height: 5vh;
+    
+  min-height: 1vh;
+  min-width: 1vh;
+
+
+    
     font-size: 1px;
-    background-color: red;
+    background-color: #2da385;
+    margin:0;
 }
 
 .pixelBox{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: auto;
-    border: red;
-    border: 1vh;
-    border-style: solid;
+   
+    margin: 0;
+   
+    
 }

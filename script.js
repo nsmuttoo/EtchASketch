@@ -22,4 +22,17 @@ container.appendChild(outerDivList[j])
 }
 }
 
-fillDivList(16)
+var pixels = document.getElementsByClassName("pixel")
+
+function changeColour(){
+    this.style.backgroundColor = "white"
+}
+
+
+
+
+fillDivList(100)
+
+for (var i =0; i<pixels.length; i++){
+    pixels[i].addEventListener("mouseover", changeColour, false)
+}
